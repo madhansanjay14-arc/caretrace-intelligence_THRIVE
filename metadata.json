@@ -1,0 +1,6 @@
+{
+  "name": "CareTrace Intelligence",
+  "description": "Healthcare decision-support command center prototype for simulated patient risk detection, factor explanation, what-if intervention simulation, and clinical workflow action.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

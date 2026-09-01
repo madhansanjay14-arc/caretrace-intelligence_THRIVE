@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0B132B;
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Technical Dashboard / Data Grid Styling */
+.glass-panel, .tech-panel {
+  background-color: #162238;
+  border: 1px solid #2B3A55;
+  border-radius: 0.5rem;
+}
+
+.tech-grid-bg {
+  background-color: #0B132B;
+  background-image: radial-gradient(#22D3EE 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.tech-blueprint-bg {
+  background-color: #0B132B;
+  background-image: 
+    linear-gradient(to right, rgba(51, 65, 85, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(51, 65, 85, 0.3) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.severity-stripe-red {
+  border-left: 3px solid #FF5C5C;
+}
+
+.severity-stripe-amber {
+  border-left: 3px solid #FBBF24;
+}
+
+.severity-stripe-cyan {
+  border-left: 3px solid #22D3EE;
+}
+
+.pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.85);
+    box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(34, 211, 238, 0);
+  }
+  100% {
+    transform: scale(0.85);
+    box-shadow: 0 0 0 0 rgba(34, 211, 238, 0);
+  }
+}
+
+.pulse-red {
+  animation: pulse-red 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.85);
+    box-shadow: 0 0 0 0 rgba(255, 92, 92, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(255, 92, 92, 0);
+  }
+  100% {
+    transform: scale(0.85);
+    box-shadow: 0 0 0 0 rgba(255, 92, 92, 0);
+  }
+}
+
+.bar-track {
+  background-color: #24344D;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.ghost-input {
+  background-color: #101B2E;
+  border: 1px solid #2B3A55;
+  color: #F8FAFC;
+  transition: all 0.2s ease;
+}
+
+.ghost-input:focus {
+  outline: none;
+  border-color: #22D3EE;
+  box-shadow: 0 0 0 1px #22D3EE;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B132B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #24344D;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22D3EE;
+}
+

@@ -1,0 +1,17 @@
+[
+  {
+    "patient_id": "P-2001",
+    "id": "P-2001",
+    "name": "Arun Kumar",
+    "age": 55,
+    "gender": "Male",
+    "pathway": "Diabetes Management",
+    "risk_score": 76,
+    "risk_level": "HIGH",
+    "missed_visits": 3,
+    "distance_miles": 20,
+    "er_visits": 2,
+    "attendance_rate": 60,
+    "created_at": "2026-09-01T17:12:51.552Z"
+  }
+]
